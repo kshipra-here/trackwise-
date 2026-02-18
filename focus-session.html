@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Focus Session | TrackWise</title>
+  <link rel="stylesheet" href="focus-session.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="page-header">
+  <a href="dashboard.html" class="back-btn">←</a>
+  <div>
+    <h1>Focus Session</h1>
+    <p>Commit to one task. Eliminate distractions.</p>
+  </div>
+</header>
+
+<!-- Main Container -->
+<main class="focus-container">
+
+  <!-- Current Task -->
+  <section class="current-task">
+    <h2>Current Task</h2>
+    <div class="task-card">
+      <h3 id="taskName">Revise DBMS Unit 3</h3>
+      <span class="tag">Study</span>
+      <span class="priority high">High Priority</span>
+    </div>
+  </section>
+
+  <!-- Timer -->
+  <section class="timer-section">
+    <div class="timer-circle">
+      <span id="timer">25:00</span>
+    </div>
+
+    <p class="session-status" id="sessionStatus">Ready to focus</p>
+
+    <div class="timer-controls">
+      <button onclick="startSession()">Start</button>
+      <button onclick="pauseSession()">Pause</button>
+      <button onclick="resetSession()">Reset</button>
+    </div>
+  </section>
+
+  <!-- Session Settings -->
+  <section class="session-settings">
+    <h2>Session Settings</h2>
+
+    <div class="setting-row">
+      <label>Focus Duration</label>
+      <select id="duration">
+        <option value="25">25 minutes</option>
+        <option value="45">45 minutes</option>
+        <option value="60">60 minutes</option>
+      </select>
+    </div>
+
+    <div class="setting-row">
+      <label>Notifications</label>
+      <input type="checkbox" checked>
+    </div>
+
+    <div class="setting-row">
+      <label>Focus Sound</label>
+      <select>
+        <option>None</option>
+        <option>Rain</option>
+        <option>White Noise</option>
+      </select>
+    </div>
+  </section>
+
+  <!-- Motivation -->
+  <section class="motivation">
+    <p id="quote">
+      “Future-you is counting on this session.”
+    </p>
+  </section>
+
+</main>
+
+<script src="focus-session.js"></script>
+</body>
+</html>

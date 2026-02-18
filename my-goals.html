@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TrackWise | My Goals</title>
+  <link rel="stylesheet" href="my-goals.css">
+</head>
+<body>
+
+<!-- Top Header -->
+<header class="page-header">
+  <div class="left-header">
+    <a href="dashboard.html" class="back-btn">←</a>
+    <h1>My Goals</h1>
+  </div>
+
+  <button class="add-btn">+ Add Goal</button>
+</header>
+
+<!-- Goals Grid -->
+<main class="task-grid">
+
+  <div class="task-card">
+    <h3>Complete DBMS Syllabus</h3>
+    <span class="priority high">Monthly Goal</span>
+    <p>Finish DBMS before internal exams</p>
+  </div>
+
+  <div class="task-card">
+    <h3>Study 4 Hours Daily</h3>
+    <span class="priority medium">Daily Goal</span>
+    <p>Maintain consistent focused study</p>
+  </div>
+
+</main>
+
+<!-- Add Goal Modal -->
+<div class="modal" id="goalModal">
+  <div class="modal-content">
+    <h3>Add New Goal</h3>
+
+    <label>Goal Title</label>
+    <input type="text" placeholder="e.g. Learn React Basics">
+
+    <label>Goal Type</label>
+    <select>
+      <option>Daily</option>
+      <option>Weekly</option>
+      <option>Monthly</option>
+      <option>Long Term</option>
+    </select>
+
+    <label>Description</label>
+    <textarea placeholder="Optional details"></textarea>
+
+    <label>Deadline</label>
+    <input type="date">
+
+    <div class="modal-actions">
+      <button class="cancel" onclick="closeModal()">Cancel</button>
+      <button class="save">Save Goal</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  const modal = document.getElementById("goalModal");
+  document.querySelector(".add-btn").onclick = () => {
+    modal.style.display = "flex";
+  };
+  function closeModal() {
+    modal.style.display = "none";
+  }
+</script>
+
+</body>
+</html>

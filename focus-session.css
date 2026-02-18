@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #0d0d14;
+  color: #e7e6f2;
+  min-height: 100vh;
+}
+
+/* Header */
+.page-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 25px 40px;
+  border-bottom: 1px solid #2a2342;
+}
+
+.back-btn {
+  font-size: 24px;
+  color: #a78bfa;
+  text-decoration: none;
+}
+
+.page-header h1 {
+  color: #c4b5fd;
+}
+
+.page-header p {
+  font-size: 14px;
+  color: #b6b3e6;
+}
+
+/* Main */
+.focus-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Task Card */
+.current-task h2 {
+  margin-bottom: 10px;
+}
+
+.task-card {
+  background: #161627;
+  border: 1px solid #2a2342;
+  padding: 25px;
+  border-radius: 14px;
+}
+
+.task-card h3 {
+  margin-bottom: 8px;
+}
+
+.tag {
+  background: #2a2342;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+.priority {
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+.priority.high {
+  color: #f87171;
+}
+
+/* Timer */
+.timer-section {
+  text-align: center;
+  margin: 60px 0;
+}
+
+.timer-circle {
+  width: 220px;
+  height: 220px;
+  margin: auto;
+  border-radius: 50%;
+  background: radial-gradient(circle, #1a1a2e, #12121c);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #a78bfa;
+}
+
+.timer-circle span {
+  font-size: 48px;
+  font-weight: 600;
+  color: #c4b5fd;
+}
+
+.session-status {
+  margin: 15px 0;
+  color: #b6b3e6;
+}
+
+.timer-controls button {
+  margin: 10px;
+  padding: 10px 22px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background: #a78bfa;
+  color: #12121c;
+}
+
+/* Settings */
+.session-settings {
+  background: #161627;
+  padding: 25px;
+  border-radius: 14px;
+  border: 1px solid #2a2342;
+}
+
+.setting-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+
+/* Motivation */
+.motivation {
+  margin-top: 40px;
+  text-align: center;
+  font-style: italic;
+  color: #b6b3e6;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .timer-circle {
+    width: 180px;
+    height: 180px;
+  }
+
+  .timer-circle span {
+    font-size: 36px;
+  }
+}
